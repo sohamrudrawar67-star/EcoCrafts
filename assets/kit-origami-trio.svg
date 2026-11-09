@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 380" width="100%" height="100%">
+  <defs>
+    <radialGradient id="trioGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF7ED" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#FED7AA" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#FDBA74" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="trioShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#554433" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" rx="16" fill="#F8F4EC"/>
+  <rect x="12" y="12" width="376" height="356" rx="12" fill="none" stroke="#E3DBCF" stroke-dasharray="4 4" stroke-width="1.5"/>
+
+  <circle cx="200" cy="180" r="140" fill="url(#trioGlow)"/>
+
+  <!-- Hanging strings for 3 small lanterns -->
+  <line x1="120" y1="40" x2="120" y2="120" stroke="#7A6855" stroke-width="1.8"/>
+  <line x1="200" y1="40" x2="200" y2="90" stroke="#7A6855" stroke-width="2"/>
+  <line x1="280" y1="40" x2="280" y2="135" stroke="#7A6855" stroke-width="1.8"/>
+
+  <!-- Branch / dowel from which they hang -->
+  <rect x="70" y="38" width="260" height="7" rx="3.5" fill="#7C5D41"/>
+
+  <!-- Left: Terracotta Teardrop Lantern -->
+  <g transform="translate(120, 160)" filter="url(#trioShadow)">
+    <path d="M 0 -40 C -30 -10, -32 25, 0 40 C 32 25, 30 -10, 0 -40 Z" fill="#E88F78" stroke="#D1745C" stroke-width="1.2"/>
+    <!-- Accordion curves -->
+    <path d="M -15 -20 Q 0 0 15 -20" stroke="#FDE8E3" stroke-width="1.2" fill="none"/>
+    <path d="M -22 5 Q 0 25 22 5" stroke="#FDE8E3" stroke-width="1.2" fill="none"/>
+    <circle cx="0" cy="0" r="10" fill="#FFF1ED" opacity="0.8"/>
+    <!-- Mini tassel -->
+    <line x1="0" y1="40" x2="0" y2="60" stroke="#C26149" stroke-width="2"/>
+    <circle cx="0" cy="62" r="3" fill="#C26149"/>
+  </g>
+
+  <!-- Center (Largest): Cream Lotus Bloom Lantern -->
+  <g transform="translate(200, 165)" filter="url(#trioShadow)">
+    <circle cx="0" cy="0" r="48" fill="#FFFDF8" stroke="#DECDB8" stroke-width="1.2"/>
+    <!-- Fold facets -->
+    <polygon points="0,-48 35,-15 0,15 -35,-15" fill="#FAF2E3" stroke="#D9C4A9" stroke-width="1"/>
+    <polygon points="0,15 35,-15 48,0 20,40" fill="#F4E8D4" stroke="#D9C4A9" stroke-width="1"/>
+    <polygon points="0,15 -35,-15 -48,0 -20,40" fill="#EFE0CA" stroke="#D9C4A9" stroke-width="1"/>
+    <polygon points="0,15 20,40 0,48 -20,40" fill="#FFFBF4" stroke="#D9C4A9" stroke-width="1"/>
+    <!-- Internal glowing ember -->
+    <circle cx="0" cy="0" r="14" fill="#FFEAA8" filter="blur(4px)"/>
+    <!-- Center Tassel -->
+    <line x1="0" y1="48" x2="0" y2="78" stroke="#9E8062" stroke-width="2.5"/>
+    <circle cx="0" cy="80" r="4" fill="#9E8062"/>
+  </g>
+
+  <!-- Right: Sage Green Diamond Lantern -->
+  <g transform="translate(280, 185)" filter="url(#trioShadow)">
+    <polygon points="0,-45 28,0 0,45 -28,0" fill="#8DA693" stroke="#718B77" stroke-width="1.2"/>
+    <polygon points="0,-45 28,0 0,0" fill="#A1BAA7" stroke="#718B77" stroke-width="1"/>
+    <polygon points="0,0 28,0 0,45" fill="#7A9380" stroke="#718B77" stroke-width="1"/>
+    <!-- Glow -->
+    <circle cx="0" cy="0" r="9" fill="#FFF7E6" opacity="0.8"/>
+    <!-- Mini tassel -->
+    <line x1="0" y1="45" x2="0" y2="65" stroke="#5D7362" stroke-width="2"/>
+    <circle cx="0" cy="67" r="3" fill="#5D7362"/>
+  </g>
+
+  <!-- Craft Badge -->
+  <g transform="translate(270, 310)">
+    <rect x="0" y="0" width="105" height="26" rx="4" fill="#FAF1DF" stroke="#D1BEA4" stroke-width="1"/>
+    <text x="52.5" y="17" font-family="'Courier New', monospace" font-size="11" fill="#785E42" font-weight="bold" text-anchor="middle">TRIO VALUE SET</text>
+  </g>
+</svg>
+

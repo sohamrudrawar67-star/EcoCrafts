@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 380" width="100%" height="100%">
+  <defs>
+    <radialGradient id="geoGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF5E5" stop-opacity="0.95"/>
+      <stop offset="65%" stop-color="#FEE2BD" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#F4C78C" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="geoShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#554232" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" rx="16" fill="#F8F4EC"/>
+  <rect x="12" y="12" width="376" height="356" rx="12" fill="none" stroke="#E2DACB" stroke-dasharray="4 4" stroke-width="1.5"/>
+
+  <circle cx="200" cy="185" r="140" fill="url(#geoGlow)"/>
+
+  <!-- Minimalist Cord -->
+  <line x1="200" y1="40" x2="200" y2="85" stroke="#7A6B5B" stroke-width="2.5"/>
+  <circle cx="200" cy="40" r="4" fill="#7A6B5B"/>
+
+  <!-- Origami Accordion Diamond Pleats Lantern -->
+  <g filter="url(#geoShadow)">
+    <!-- Top fold collar -->
+    <polygon points="180,85 220,85 235,115 165,115" fill="#EAE2D4" stroke="#C5B7A2" stroke-width="1.2"/>
+    
+    <!-- Facet Row 1 -->
+    <polygon points="165,115 200,150 150,165 130,125" fill="#FBF8F2" stroke="#D3C7B3" stroke-width="1"/>
+    <polygon points="165,115 200,85 200,150" fill="#FAF5EB" stroke="#D3C7B3" stroke-width="1"/>
+    <polygon points="200,85 235,115 200,150" fill="#F3ECE0" stroke="#D3C7B3" stroke-width="1"/>
+    <polygon points="235,115 270,125 250,165 200,150" fill="#ECE3D4" stroke="#D3C7B3" stroke-width="1"/>
+
+    <!-- Facet Row 2 (Widest Diamond Midriff) -->
+    <polygon points="130,125 150,165 115,190" fill="#F6EFE3" stroke="#D3C7B3" stroke-width="1"/>
+    <polygon points="150,165 200,150 200,205 145,215" fill="#FFFDF8" stroke="#D3C7B3" stroke-width="1"/>
+    <polygon points="200,150 250,165 255,215 200,205" fill="#F5EEE2" stroke="#D3C7B3" stroke-width="1"/>
+    <polygon points="250,165 270,125 285,190" fill="#E8DEC8" stroke="#D3C7B3" stroke-width="1"/>
+    <polygon points="250,165 285,190 255,215" fill="#DFD4BE" stroke="#D3C7B3" stroke-width="1"/>
+    <polygon points="150,165 115,190 145,215" fill="#EFE6D6" stroke="#D3C7B3" stroke-width="1"/>
+
+    <!-- Facet Row 3 (Bottom convergence) -->
+    <polygon points="145,215 200,205 200,265 165,255" fill="#FAF5EC" stroke="#D3C7B3" stroke-width="1"/>
+    <polygon points="200,205 255,215 235,255 200,265" fill="#EDE4D2" stroke="#D3C7B3" stroke-width="1"/>
+    <polygon points="145,215 165,255 130,245 115,190" fill="#E8DEC8" stroke="#D3C7B3" stroke-width="1"/>
+    <polygon points="255,215 285,190 270,245 235,255" fill="#D9CCB4" stroke="#D3C7B3" stroke-width="1"/>
+
+    <!-- Bottom fold collar -->
+    <polygon points="165,255 235,255 220,280 180,280" fill="#E4DBCB" stroke="#C5B7A2" stroke-width="1.2"/>
+  </g>
+
+  <!-- Wooden base disc -->
+  <ellipse cx="200" cy="285" rx="35" ry="9" fill="#9E7C57"/>
+
+  <!-- Light bloom -->
+  <circle cx="200" cy="180" r="16" fill="#FFF3CD" filter="blur(5px)" opacity="0.9"/>
+
+  <!-- Craft Badge -->
+  <g transform="translate(285, 35)">
+    <rect x="0" y="0" width="85" height="26" rx="4" fill="#FAF1DF" stroke="#D1BEA4" stroke-width="1"/>
+    <text x="42.5" y="17" font-family="'Courier New', monospace" font-size="11" fill="#785E42" font-weight="bold" text-anchor="middle">ORIGAMI FOLD</text>
+  </g>
+</svg>
+

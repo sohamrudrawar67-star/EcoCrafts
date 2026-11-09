@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <defs>
+    <path id="circlePath" d="M 80,80 m -56,0 a 56,56 0 1,1 112,0 a 56,56 0 1,1 -112,0" />
+  </defs>
+  <!-- Outer serrated/stamped ring -->
+  <circle cx="80" cy="80" r="74" fill="none" stroke="#C26D53" stroke-width="2.5" stroke-dasharray="6 3"/>
+  <circle cx="80" cy="80" r="66" fill="none" stroke="#C26D53" stroke-width="1.2"/>
+  
+  <!-- Text on Path -->
+  <text font-family="'Cinzel', 'Playfair Display', Georgia, serif" font-size="9" fill="#9C4C34" font-weight="600" letter-spacing="2.2">
+    <textPath href="#circlePath" startOffset="0%">
+      ★ ALL-IN-ONE DIY KIT ★ ZERO TOOLS NEEDED ★
+    </textPath>
+  </text>
+
+  <!-- Center Craft Motif (Lantern outline) -->
+  <g transform="translate(80, 80) scale(0.65)" stroke="#C26D53" fill="none" stroke-width="2">
+    <ellipse cx="0" cy="-22" rx="14" ry="4"/>
+    <path d="M -14 -22 C -24 0, -24 16, -12 28 L 12 28 C 24 16, 24 0, 14 -22 Z" fill="#FDF8F3"/>
+    <ellipse cx="0" cy="28" rx="12" ry="3"/>
+    <!-- Little flame -->
+    <path d="M 0 5 Q -4 14 0 18 Q 4 14 0 5 Z" fill="#E89B5F" stroke="none"/>
+    <circle cx="0" cy="-30" r="3"/>
+    <line x1="0" y1="-27" x2="0" y2="-22"/>
+  </g>
+</svg>
+

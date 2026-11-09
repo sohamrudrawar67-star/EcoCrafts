@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 380" width="100%" height="100%">
+  <defs>
+    <radialGradient id="kyotoGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF5E0" stop-opacity="0.95"/>
+      <stop offset="65%" stop-color="#FCDCA4" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#EAA655" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bambooWood" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#543D2B"/>
+      <stop offset="50%" stop-color="#73553C"/>
+      <stop offset="100%" stop-color="#4A3423"/>
+    </linearGradient>
+    <filter id="shadowK" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#4B3929" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" rx="16" fill="#F7F3EB"/>
+  <rect x="12" y="12" width="376" height="356" rx="12" fill="none" stroke="#E2D9CB" stroke-dasharray="4 4" stroke-width="1.5"/>
+
+  <!-- Warm Japanese Lantern Aura -->
+  <circle cx="200" cy="180" r="145" fill="url(#kyotoGlow)"/>
+
+  <!-- Top Silk Cord and Tassel Top -->
+  <path d="M 200 35 L 200 80" stroke="#99382C" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="200" cy="35" r="5" fill="#B34234"/>
+  <rect x="195" y="70" width="10" height="12" rx="2" fill="#B34234"/>
+
+  <!-- Roof Crown (Pagoda Style Cap) -->
+  <path d="M 140 92 Q 200 78 260 92 L 250 102 L 150 102 Z" fill="url(#bambooWood)"/>
+
+  <!-- Main Hexagonal Lantern Frame -->
+  <g filter="url(#shadowK)">
+    <!-- Rice Paper Facets -->
+    <!-- Left panel -->
+    <polygon points="152,102 142,245 178,252 186,104" fill="#FAF5E8" stroke="#D1C2A5" stroke-width="1.2"/>
+    <!-- Center panel -->
+    <polygon points="186,104 178,252 222,252 214,104" fill="#FFFBF2" stroke="#D1C2A5" stroke-width="1.2"/>
+    <!-- Right panel -->
+    <polygon points="214,104 222,252 258,245 248,102" fill="#F5EFE0" stroke="#D1C2A5" stroke-width="1.2"/>
+
+    <!-- Bamboo Lattice Ribs (Kumiko Pattern) -->
+    <!-- Center Panel Kumiko -->
+    <line x1="186" y1="140" x2="214" y2="140" stroke="#87684C" stroke-width="1.8"/>
+    <line x1="184" y1="178" x2="216" y2="178" stroke="#87684C" stroke-width="1.8"/>
+    <line x1="181" y1="216" x2="219" y2="216" stroke="#87684C" stroke-width="1.8"/>
+    <line x1="200" y1="104" x2="200" y2="252" stroke="#87684C" stroke-width="1.8"/>
+
+    <!-- Left Panel Kumiko -->
+    <line x1="150" y1="140" x2="186" y2="140" stroke="#87684C" stroke-width="1.5"/>
+    <line x1="147" y1="178" x2="184" y2="178" stroke="#87684C" stroke-width="1.5"/>
+    <line x1="144" y1="216" x2="181" y2="216" stroke="#87684C" stroke-width="1.5"/>
+
+    <!-- Right Panel Kumiko -->
+    <line x1="214" y1="140" x2="250" y2="140" stroke="#87684C" stroke-width="1.5"/>
+    <line x1="216" y1="178" x2="253" y2="178" stroke="#87684C" stroke-width="1.5"/>
+    <line x1="219" y1="216" x2="256" y2="216" stroke="#87684C" stroke-width="1.5"/>
+
+    <!-- Outer Frame Posts -->
+    <line x1="152" y1="100" x2="142" y2="247" stroke="#543D2B" stroke-width="4" stroke-linecap="round"/>
+    <line x1="186" y1="102" x2="178" y2="254" stroke="#543D2B" stroke-width="3" stroke-linecap="round"/>
+    <line x1="214" y1="102" x2="222" y2="254" stroke="#543D2B" stroke-width="3" stroke-linecap="round"/>
+    <line x1="248" y1="100" x2="258" y2="247" stroke="#543D2B" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Bottom Wooden Rim & Corner Feet -->
+  <polygon points="138,245 262,245 252,256 148,256" fill="url(#bambooWood)"/>
+
+  <!-- Silken Bottom Tassel -->
+  <g transform="translate(200, 256)">
+    <circle cx="0" cy="8" r="6" fill="#B34234"/>
+    <path d="M -5 14 C -12 40, -14 70, -8 85 L 8 85 C 14 70, 12 40, 5 14 Z" fill="#99382C"/>
+    <line x1="-3" y1="20" x2="-3" y2="82" stroke="#C45647" stroke-width="1"/>
+    <line x1="0" y1="20" x2="0" y2="84" stroke="#DE7162" stroke-width="1"/>
+    <line x1="3" y1="20" x2="3" y2="82" stroke="#C45647" stroke-width="1"/>
+  </g>
+
+  <!-- Subtle Washi Fiber Motifs -->
+  <path d="M 194 150 Q 202 153 205 160" stroke="#DECFB6" stroke-width="1" fill="none"/>
+  <path d="M 160 190 Q 168 195 164 204" stroke="#DECFB6" stroke-width="1" fill="none"/>
+
+  <!-- Craft Badge -->
+  <g transform="translate(285, 35)">
+    <rect x="0" y="0" width="85" height="26" rx="4" fill="#FAF1DF" stroke="#D1BEA4" stroke-width="1"/>
+    <text x="42.5" y="17" font-family="'Courier New', monospace" font-size="11" fill="#785E42" font-weight="bold" text-anchor="middle">KYOTO WASHI</text>
+  </g>
+</svg>
+

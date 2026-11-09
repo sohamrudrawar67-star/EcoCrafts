@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 380" width="100%" height="100%">
+  <defs>
+    <radialGradient id="rattanGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF2D4" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#FEDB9C" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#EAA655" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="caneWicker" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A87F53"/>
+      <stop offset="50%" stop-color="#CB9D68"/>
+      <stop offset="100%" stop-color="#8F683D"/>
+    </linearGradient>
+    <filter id="rattanShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#4F3B25" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" rx="16" fill="#F8F4EC"/>
+  <rect x="12" y="12" width="376" height="356" rx="12" fill="none" stroke="#E2D9CB" stroke-dasharray="4 4" stroke-width="1.5"/>
+
+  <!-- Warm ambient light escaping woven slats -->
+  <circle cx="200" cy="185" r="140" fill="url(#rattanGlow)"/>
+
+  <!-- Jute Hanging Handle -->
+  <path d="M 160 100 C 160 50, 240 50, 240 100" fill="none" stroke="#947453" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Rattan Body -->
+  <g filter="url(#rattanShadow)">
+    <!-- Inner warm parchment liner -->
+    <ellipse cx="200" cy="100" rx="60" ry="14" fill="#FAF4E8"/>
+    <path d="M 140 100 Q 120 185 145 260 L 255 260 Q 280 185 260 100 Z" fill="#FFFBF0" stroke="#DFCFAF" stroke-width="1"/>
+
+    <!-- Horizontal Rattan Hoops -->
+    <ellipse cx="200" cy="100" rx="62" ry="14" fill="none" stroke="url(#caneWicker)" stroke-width="5"/>
+    <ellipse cx="200" cy="135" rx="70" ry="15" fill="none" stroke="url(#caneWicker)" stroke-width="3.5"/>
+    <ellipse cx="200" cy="175" rx="76" ry="16" fill="none" stroke="url(#caneWicker)" stroke-width="3.5"/>
+    <ellipse cx="200" cy="215" rx="72" ry="15" fill="none" stroke="url(#caneWicker)" stroke-width="3.5"/>
+    <ellipse cx="200" cy="258" rx="58" ry="13" fill="none" stroke="url(#caneWicker)" stroke-width="5"/>
+
+    <!-- Vertical Woven Cane Splines -->
+    <path d="M 148 100 Q 128 185 152 260" stroke="#A87F53" stroke-width="2.5" fill="none"/>
+    <path d="M 165 102 Q 150 185 168 261" stroke="#BD9465" stroke-width="2.5" fill="none"/>
+    <path d="M 182 103 Q 175 185 184 262" stroke="#A87F53" stroke-width="2.5" fill="none"/>
+    <path d="M 200 104 L 200 262" stroke="#BD9465" stroke-width="2.8" fill="none"/>
+    <path d="M 218 103 Q 225 185 216 262" stroke="#A87F53" stroke-width="2.5" fill="none"/>
+    <path d="M 235 102 Q 250 185 232 261" stroke="#BD9465" stroke-width="2.5" fill="none"/>
+    <path d="M 252 100 Q 272 185 248 260" stroke="#A87F53" stroke-width="2.5" fill="none"/>
+
+    <!-- Diagonal Lattice Crossings for Artisanal Weave -->
+    <line x1="155" y1="135" x2="195" y2="175" stroke="#8A6740" stroke-width="1.2" opacity="0.7"/>
+    <line x1="195" y1="135" x2="235" y2="175" stroke="#8A6740" stroke-width="1.2" opacity="0.7"/>
+    <line x1="165" y1="175" x2="205" y2="215" stroke="#8A6740" stroke-width="1.2" opacity="0.7"/>
+    <line x1="205" y1="175" x2="245" y2="215" stroke="#8A6740" stroke-width="1.2" opacity="0.7"/>
+  </g>
+
+  <!-- Wooden Round Base -->
+  <ellipse cx="200" cy="265" rx="45" ry="8" fill="#6B4B29"/>
+
+  <!-- Glow center -->
+  <ellipse cx="200" cy="180" rx="30" ry="38" fill="#FFEAA8" opacity="0.6" filter="blur(6px)"/>
+
+  <!-- Craft Badge -->
+  <g transform="translate(280, 35)">
+    <rect x="0" y="0" width="90" height="26" rx="4" fill="#FAF1DF" stroke="#D1BEA4" stroke-width="1"/>
+    <text x="45" y="17" font-family="'Courier New', monospace" font-size="11" fill="#785E42" font-weight="bold" text-anchor="middle">NATURAL CANE</text>
+  </g>
+</svg>
+

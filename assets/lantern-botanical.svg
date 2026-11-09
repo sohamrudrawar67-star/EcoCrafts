@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 380" width="100%" height="100%">
+  <defs>
+    <radialGradient id="floraGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF8E8" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#FCEABF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#EED596" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="brassGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B8964C"/>
+      <stop offset="50%" stop-color="#DDC383"/>
+      <stop offset="100%" stop-color="#9C7736"/>
+    </linearGradient>
+    <filter id="floraShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#4F4434" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" rx="16" fill="#F8F5EE"/>
+  <rect x="12" y="12" width="376" height="356" rx="12" fill="none" stroke="#E3DBCF" stroke-dasharray="4 4" stroke-width="1.5"/>
+
+  <circle cx="200" cy="185" r="140" fill="url(#floraGlow)"/>
+
+  <!-- Golden Brass Suspension Arch -->
+  <path d="M 160 110 C 160 50, 240 50, 240 110" fill="none" stroke="url(#brassGold)" stroke-width="3"/>
+  <circle cx="200" cy="50" r="4" fill="url(#brassGold)"/>
+
+  <!-- Cylindrical Translucent Vellum Cylinder with Pressed Botanicals -->
+  <g filter="url(#floraShadow)">
+    <!-- Top Brass Ring -->
+    <ellipse cx="200" cy="110" rx="65" ry="16" fill="url(#brassGold)"/>
+    <ellipse cx="200" cy="110" rx="61" ry="13" fill="#FFF9ED"/>
+
+    <!-- Cylinder Translucent Body -->
+    <path d="M 135 110 L 135 255 C 135 270, 265 270, 265 255 L 265 110 Z" fill="#FFFBF2" stroke="#E5DEC9" stroke-width="1.2"/>
+
+    <!-- Bottom Brass Ring -->
+    <ellipse cx="200" cy="255" rx="65" ry="16" fill="url(#brassGold)"/>
+    <ellipse cx="200" cy="253" rx="63" ry="14" fill="#B8964C"/>
+
+    <!-- Real Pressed Botanicals (Ferns, Larkspur, Daisies) embedded in translucent paper -->
+    <!-- Fern Frond Left -->
+    <g transform="translate(155, 140) rotate(-12)" stroke="#53694E" fill="none" stroke-linecap="round">
+      <path d="M 0 80 Q 5 40 12 0" stroke-width="1.8"/>
+      <path d="M 3 65 Q 15 62 20 58" stroke-width="1.3"/>
+      <path d="M 5 50 Q 18 45 22 40" stroke-width="1.3"/>
+      <path d="M 7 35 Q 20 28 23 24" stroke-width="1.2"/>
+      <path d="M 9 20 Q 18 14 18 8" stroke-width="1.1"/>
+      <path d="M 1 68 Q -10 65 -14 62" stroke-width="1.3"/>
+      <path d="M 3 53 Q -8 49 -12 44" stroke-width="1.3"/>
+      <path d="M 6 38 Q -6 32 -9 26" stroke-width="1.2"/>
+    </g>
+
+    <!-- Pressed Orange/Amber Blossom Center -->
+    <g transform="translate(202, 185)">
+      <circle cx="0" cy="0" r="14" fill="#D9824C" opacity="0.85"/>
+      <circle cx="-10" cy="-6" r="10" fill="#E89B5F" opacity="0.75"/>
+      <circle cx="9" cy="-8" r="10" fill="#E89B5F" opacity="0.75"/>
+      <circle cx="-9" cy="8" r="10" fill="#E89B5F" opacity="0.75"/>
+      <circle cx="9" cy="8" r="10" fill="#E89B5F" opacity="0.75"/>
+      <circle cx="0" cy="0" r="5" fill="#5E442B"/>
+      <!-- Delicate stem -->
+      <path d="M 0 14 Q -2 40 -8 55" stroke="#6C7F60" stroke-width="1.4" fill="none"/>
+    </g>
+
+    <!-- Pressed Purple Larkspur Petals Right -->
+    <g transform="translate(230, 155) rotate(15)">
+      <path d="M 0 0 C -6 -10, 6 -18, 0 -26 C -8 -20, -10 -8, 0 0" fill="#886D94" opacity="0.8"/>
+      <path d="M 4 -5 C 12 -12, 16 -4, 18 6 C 10 6, 6 2, 4 -5" fill="#9980A5" opacity="0.75"/>
+      <circle cx="0" cy="2" r="3" fill="#E3CB7A"/>
+      <path d="M 0 6 Q 4 35 12 55" stroke="#627855" stroke-width="1.2" fill="none"/>
+    </g>
+
+    <!-- Gentle light core -->
+    <ellipse cx="200" cy="180" rx="35" ry="45" fill="#FFEAA8" opacity="0.4" filter="blur(8px)"/>
+  </g>
+
+  <!-- Craft Badge -->
+  <g transform="translate(280, 35)">
+    <rect x="0" y="0" width="90" height="26" rx="4" fill="#FAF1DF" stroke="#D1BEA4" stroke-width="1"/>
+    <text x="45" y="17" font-family="'Courier New', monospace" font-size="11" fill="#785E42" font-weight="bold" text-anchor="middle">REAL FLORA</text>
+  </g>
+</svg>
+

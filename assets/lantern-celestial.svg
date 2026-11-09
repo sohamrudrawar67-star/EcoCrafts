@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 380" width="100%" height="100%">
+  <defs>
+    <radialGradient id="skyNight" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#353E54"/>
+      <stop offset="60%" stop-color="#242B3B"/>
+      <stop offset="100%" stop-color="#191F2C"/>
+    </radialGradient>
+    <radialGradient id="starGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF2"/>
+      <stop offset="50%" stop-color="#FFDD80" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#EAA638" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="celestShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#0F141F" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" rx="16" fill="#F4F1EA"/>
+  <rect x="12" y="12" width="376" height="356" rx="12" fill="none" stroke="#DED5C5" stroke-dasharray="4 4" stroke-width="1.5"/>
+
+  <!-- Back Glow beaming through pinholes -->
+  <circle cx="200" cy="180" r="140" fill="url(#starGlow)"/>
+
+  <!-- Jute Hanging Rope -->
+  <line x1="200" y1="40" x2="200" y2="85" stroke="#8C735A" stroke-width="3" stroke-dasharray="4 2"/>
+  <circle cx="200" cy="40" r="4.5" fill="#8C735A"/>
+
+  <!-- Dark Indigo Hand-Pierced Cylinder Lantern -->
+  <g filter="url(#celestShadow)">
+    <ellipse cx="200" cy="88" rx="60" ry="14" fill="#4B5670"/>
+    <ellipse cx="200" cy="86" rx="58" ry="12" fill="#242B3B"/>
+
+    <path d="M 140 88 L 140 248 C 140 262, 260 262, 260 248 L 260 88 Z" fill="url(#skyNight)" stroke="#4A566E" stroke-width="1.5"/>
+
+    <ellipse cx="200" cy="248" rx="60" ry="14" fill="#1C212E"/>
+    <ellipse cx="200" cy="254" rx="64" ry="14" fill="none" stroke="#8A6B48" stroke-width="3"/>
+
+    <!-- Pierced Crescent Moon (Backlit Golden Hole) -->
+    <path d="M 195 130 A 28 28 0 0 0 195 186 A 20 20 0 0 1 195 130 Z" fill="#FFEAA8" filter="drop-shadow(0 0 8px #FFD966)"/>
+
+    <!-- Pierced Constellations / Stars (Small glowing apertures) -->
+    <circle cx="230" cy="135" r="3.5" fill="#FFF5C2" filter="drop-shadow(0 0 4px #FFE58F)"/>
+    <circle cx="245" cy="155" r="2.5" fill="#FFF5C2" filter="drop-shadow(0 0 4px #FFE58F)"/>
+    <circle cx="225" cy="175" r="4" fill="#FFF5C2" filter="drop-shadow(0 0 4px #FFE58F)"/>
+    <circle cx="240" cy="205" r="3" fill="#FFF5C2" filter="drop-shadow(0 0 4px #FFE58F)"/>
+    <circle cx="165" cy="145" r="2.5" fill="#FFF5C2" filter="drop-shadow(0 0 4px #FFE58F)"/>
+    <circle cx="155" cy="180" r="3.5" fill="#FFF5C2" filter="drop-shadow(0 0 4px #FFE58F)"/>
+    <circle cx="170" cy="215" r="3" fill="#FFF5C2" filter="drop-shadow(0 0 4px #FFE58F)"/>
+    <circle cx="205" cy="225" r="2.5" fill="#FFF5C2" filter="drop-shadow(0 0 4px #FFE58F)"/>
+
+    <!-- Faint star map lines connecting stars -->
+    <line x1="230" y1="135" x2="245" y2="155" stroke="#FFEAA8" stroke-width="0.8" stroke-dasharray="2 2" opacity="0.6"/>
+    <line x1="245" y1="155" x2="225" y2="175" stroke="#FFEAA8" stroke-width="0.8" stroke-dasharray="2 2" opacity="0.6"/>
+    <line x1="225" y1="175" x2="240" y2="205" stroke="#FFEAA8" stroke-width="0.8" stroke-dasharray="2 2" opacity="0.6"/>
+  </g>
+
+  <!-- Craft Badge -->
+  <g transform="translate(280, 35)">
+    <rect x="0" y="0" width="90" height="26" rx="4" fill="#FAF1DF" stroke="#D1BEA4" stroke-width="1"/>
+    <text x="45" y="17" font-family="'Courier New', monospace" font-size="11" fill="#785E42" font-weight="bold" text-anchor="middle">STAR PIERCED</text>
+  </g>
+</svg>
+
