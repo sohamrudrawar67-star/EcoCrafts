@@ -3,667 +3,292 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoCrafts — Artisanal DIY Lantern & Papercraft Kits</title>
-  <meta name="description" content="Simple, sober, and mindful DIY lantern kits by EcoCrafts. Handcrafted with sustainable paper, natural bamboo, and ambient warm LED lights.">
+  <title>EcoCrafts — Handcrafted DIY Lantern Kits</title>
+  <meta name="description" content="Simple, sober, and mindful DIY lantern kits. Sustainable materials, natural wood frames, and warm ambient LED lights.">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏮</text></svg>">
 </head>
 <body>
 
-  <!-- Top Sober Announcement Bar -->
-  <div class="announcement-bar">
-    <span>🌿 Sustainable Mulberry Paper &amp; Bamboo Frames • <strong>Free Shipping over $50</strong></span>
-    <button class="cozy-toggle-btn" id="cozyToggleBtn" onclick="toggleCozyNightMode()" title="Toggle Evening Cozy View">
-      🕯️ Evening Glow Mode
-    </button>
+  <!-- Top Announcement -->
+  <div class="top-notice">
+    Free carbon-neutral shipping on orders over $50 • <strong>100% Recyclable Packaging</strong>
   </div>
 
-  <!-- Site Navigation Header -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <!-- Brand Logo -->
-      <a href="#" class="brand-logo">
-        <div class="brand-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 2v20M5 7h14M7 17h10M4 12h16"/>
-          </svg>
-        </div>
-        <div class="brand-text">
-          <h1>EcoCrafts</h1>
-          <p>Artisanal DIY Craft Kits</p>
-        </div>
-      </a>
+  <!-- Navigation -->
+  <header class="site-nav">
+    <div class="container nav-wrapper">
+      <a href="#" class="logo">EcoCrafts</a>
 
-      <!-- Desktop Nav Links -->
       <nav>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#shop" class="active">Shop DIY Kits</a></li>
-          <li><a href="#lanterns">Lantern Collection</a></li>
-          <li><a href="#glow-studio">Glow Studio</a></li>
+        <ul class="nav-menu">
+          <li><a href="#shop" class="active">Shop Kits</a></li>
           <li><a href="#how-it-works">How It Works</a></li>
-          <li><a href="#reviews">Makers &amp; Stories</a></li>
-          <li><a href="#craft-club">Craft Club</a></li>
+          <li><a href="#about">About</a></li>
         </ul>
       </nav>
 
-      <!-- Header Actions -->
-      <div class="header-actions">
-        <!-- Search Trigger / Anchor -->
-        <a href="#shop" class="action-icon-btn" title="Search DIY Kits" onclick="document.getElementById('catalogSearchInput').focus();">
-          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
-          </svg>
-        </a>
-
-        <!-- Cart Bag Trigger -->
-        <button class="action-icon-btn" id="openCartBtn" onclick="toggleCartDrawer(true)" title="Shopping Bag" aria-label="Open cart">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
-            <path d="M3 6h18"/>
-            <path d="M16 10a4 4 0 0 1-8 0"/>
-          </svg>
-          <span class="cart-badge" id="cartCountBadge" style="display: none;">0</span>
-        </button>
-
-        <!-- Mobile Menu Toggle Button -->
-        <button class="action-icon-btn mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/>
-          </svg>
-        </button>
-      </div>
+      <button class="cart-toggle-btn" onclick="toggleCart(true)" aria-label="Open Cart Bag">
+        <span>Bag</span>
+        <span class="cart-pill" id="cartCount" style="display: none;">0</span>
+      </button>
     </div>
   </header>
 
-  <!-- Hero Section (Simple, Sober, Atmospheric) -->
-  <section class="hero-section">
-    <div class="container hero-grid">
-      <!-- Left Column: Simple & Sober Copy -->
-      <div class="hero-content">
-        <div class="hero-eyebrow">
-          <span class="washi-strip">Handmade DIY Lantern Kits</span>
-        </div>
-        <h2 class="hero-title">
-          Slow Down. Craft a <em>Warm Ambient Glow</em> With Your Own Hands.
-        </h2>
-        <p class="hero-desc">
-          Thoughtfully curated craft boxes featuring pre-scored mulberry paper, natural wooden framework, warm LED lights, and peaceful step-by-step guidance. No extra tools required.
+  <!-- Hero Section (Simple, Sober, Prominent) -->
+  <section class="hero">
+    <div class="container hero-layout">
+      <div>
+        <span class="hero-tag">Sustainable DIY Lantern Kits</span>
+        <h1 class="hero-heading">Craft a Warm Ambiance with Your Own Hands.</h1>
+        <p class="hero-lead">
+          All-in-one DIY lantern kits with sustainably sourced paper, natural wood, and warm ambient LED lighting. Thoughtfully designed for quiet evenings at home.
         </p>
 
-        <div class="hero-ctas">
-          <a href="#shop" class="btn btn-primary">
-            Explore All DIY Kits
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
-            </svg>
-          </a>
-          <a href="#glow-studio" class="btn btn-secondary">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
-            </svg>
-            Interactive Glow Studio
-          </a>
+        <div class="hero-actions">
+          <a href="#shop" class="btn btn-primary">Shop All Kits →</a>
+          <a href="#how-it-works" class="btn btn-secondary">How It Works</a>
         </div>
 
-        <div class="hero-badges-list">
-          <div class="hero-badge-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>
-            </svg>
+        <div class="hero-checks">
+          <span><strong>✓</strong> All materials in box</span>
+          <span><strong>✓</strong> Beginner friendly</span>
+          <span><strong>✓</strong> Warm LED included</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-visual-card">
+          <img src="assets/lantern-nordic.svg" alt="Fluted Paper Lantern Kit">
+          <div class="hero-caption">
             <div>
-              <h5>All-in-One Box</h5>
-              <p>Everything inside</p>
+              <h4>Fluted Paper Lantern Kit</h4>
+              <p>FSC Cardstock • Birch Base • Warm LED</p>
             </div>
-          </div>
-
-          <div class="hero-badge-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
-            </svg>
-            <div>
-              <h5>45–60 Mins Craft</h5>
-              <p>Mindful offline time</p>
-            </div>
-          </div>
-
-          <div class="hero-badge-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
-              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
-            </svg>
-            <div>
-              <h5>Eco-Materials</h5>
-              <p>FSC paper &amp; bamboo</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right Column: Tactile Showcase Card with Interactive Light Switcher -->
-      <div class="hero-showcase">
-        <!-- Floating Artisanal Seal Stamp -->
-        <img src="assets/craft-stamp.svg" alt="Handcrafted Stamp" class="stamp-overlay">
-
-        <div class="hero-card glowing" id="heroLanternCard">
-          <div class="hero-image-wrapper">
-            <img src="assets/lantern-nordic.svg" alt="Nordic Fluted Paper Lantern Kit" id="heroLanternImg">
-          </div>
-          
-          <div class="hero-card-footer">
-            <div class="hero-card-meta">
-              <h4>Nordic Fluted Lantern Kit</h4>
-              <p>FSC White Cardstock • Solid Birchwood Ring • LED Candle</p>
-            </div>
-            <button class="glow-toggle-pill" id="heroGlowBtn" onclick="toggleHeroGlow()" title="Turn light on/off">
-              <span class="glow-dot"></span> Light: On
-            </button>
+            <strong>$28.00</strong>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Craft Supplies & Philosophy Strip -->
-  <section class="philosophy-section">
-    <div class="container philosophy-grid">
-      <div class="philosophy-card">
-        <div class="philosophy-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/>
-          </svg>
-        </div>
-        <h3>Pre-Scored &amp; Ready</h3>
-        <p>No tedious measuring or sharp blades needed. Each geometric crease is pre-pressed so your folds lock cleanly into place.</p>
-      </div>
-
-      <div class="philosophy-card green">
-        <div class="philosophy-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-          </svg>
-        </div>
-        <h3>Natural Sustainable Fibers</h3>
-        <p>Pure Japanese Kozo mulberry fibers, hand-harvested bamboo frames, water-soluble starch paste, and plastic-free packaging.</p>
-      </div>
-
-      <div class="philosophy-card amber">
-        <div class="philosophy-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="5"/><path d="M12 1v2"/><path d="M12 21v2"/><path d="M4.22 4.22l1.42 1.42"/><path d="M18.36 18.36l1.42 1.42"/><path d="M1 12h2"/><path d="M21 12h2"/><path d="M4.22 19.78l1.42-1.42"/><path d="M18.36 5.64l1.42-1.42"/>
-          </svg>
-        </div>
-        <h3>Safe Ambient Micro-LED</h3>
-        <p>Every kit includes an ultra-safe, warm flickering LED puck or copper fairy string with replaceable long-life batteries.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Interactive Glow Studio (Visual Ambiance Switcher) -->
-  <section class="glow-studio-section" id="glow-studio">
+  <!-- Shop Collection -->
+  <section class="shop-section" id="shop">
     <div class="container">
-      <div class="section-header">
-        <span class="washi-strip" style="margin-bottom: 0.75rem;">Interactive Simulator</span>
-        <h2>Experience the Ambient Glow</h2>
-        <p>Preview how our artisanal lanterns diffuse warm light through natural mulberry fibers across different times of the day.</p>
+      <div class="section-head">
+        <h2>DIY Lantern Kits</h2>
+        <p>Complete craft boxes with everything you need. No extra tools required.</p>
       </div>
 
-      <div class="glow-simulator-box">
-        <!-- Visual Lantern Display -->
-        <div class="simulator-visual" id="simulatorVisual">
-          <img src="assets/lantern-nordic.svg" alt="Lantern Light Preview" id="simulatorLanternImg">
-        </div>
+      <!-- Clean Category Filter -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-category="all">All Kits</button>
+        <button class="filter-btn" data-category="paper">Papercraft</button>
+        <button class="filter-btn" data-category="wood">Wood &amp; Rattan</button>
+        <button class="filter-btn" data-category="floral">Pressed Botanicals</button>
+      </div>
 
-        <!-- Interactive Controls -->
-        <div class="simulator-controls">
-          <div class="control-group">
-            <label>1. Select Room Atmosphere:</label>
-            <div class="lighting-modes-bar">
-              <button class="mode-btn active" data-mode="natural" onclick="setSimulatorMode('natural')">
-                ☀️ Soft Daylight
-              </button>
-              <button class="mode-btn" data-mode="sunset" onclick="setSimulatorMode('sunset')">
-                🌅 Golden Sunset
-              </button>
-              <button class="mode-btn" data-mode="candle" onclick="setSimulatorMode('candle')">
-                🕯️ Midnight Glow
-              </button>
-            </div>
-          </div>
-
-          <div class="control-group">
-            <label>2. Preview Craft Style / Paper Finish:</label>
-            <div class="paper-swatches">
-              <button class="swatch-btn active" data-paper="cream" style="background: #FDF9EE;" onclick="setSimulatorPaper('cream')" title="Mulberry Washi Cream"></button>
-              <button class="swatch-btn" data-paper="terracotta" style="background: #D97E66;" onclick="setSimulatorPaper('terracotta')" title="Terracotta Blossom Trio"></button>
-              <button class="swatch-btn" data-paper="sage" style="background: #6E8773;" onclick="setSimulatorPaper('sage')" title="Pressed Fern Botanical"></button>
-              <button class="swatch-btn" data-paper="indigo" style="background: #242D3D;" onclick="setSimulatorPaper('indigo')" title="Star Pierced Constellation"></button>
-            </div>
-          </div>
-
-          <div class="simulator-tip">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;">
-              <circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/>
-            </svg>
-            <div>
-              <strong>Artisanal Note:</strong> Traditional washi paper possesses natural translucent fiber clusters called <em>Kozo mizu</em> that scatter light gently, producing an even, eye-friendly halo without harsh glare.
-            </div>
-          </div>
-
-          <div>
-            <a href="#shop" class="btn btn-primary" style="width: 100%;">
-              Shop This Lantern Kit
-            </a>
-          </div>
-        </div>
+      <!-- Products Grid -->
+      <div class="kits-grid" id="productsGrid">
+        <!-- Injected via app.js -->
       </div>
     </div>
   </section>
 
-  <!-- Product Catalog Section (DIY Kits) -->
-  <section class="catalog-section" id="shop">
+  <!-- How It Works (Simple 3 Pillars) -->
+  <section class="pillars-section" id="how-it-works">
     <div class="container">
-      <div class="section-header" style="margin-bottom: 2rem;">
-        <span class="washi-strip" style="margin-bottom: 0.75rem;">Craft Workshop Kits</span>
-        <h2>Curated DIY Lantern Kits</h2>
-        <p>All kits arrive complete with pre-cut structural cardstock, framing materials, adhesives, LED modules, and illustrated instruction guides.</p>
+      <div class="section-head" style="margin-bottom: 3.5rem;">
+        <h2>Simple by Design</h2>
+        <p>Created for complete beginners and craft enthusiasts alike.</p>
       </div>
 
-      <!-- Toolbar: Categories, Search & Sort -->
-      <div class="catalog-toolbar">
-        <div class="category-tabs">
-          <button class="tab-btn active" data-category="all">All Kits (8)</button>
-          <button class="tab-btn" data-category="lanterns">Traditional Lanterns</button>
-          <button class="tab-btn" data-category="origami">Origami &amp; Fold</button>
-          <button class="tab-btn" data-category="botanical">Pressed Botanicals</button>
-          <button class="tab-btn" data-category="weaving">Cane &amp; Weaving</button>
+      <div class="pillars-grid">
+        <div class="pillar-item">
+          <div class="pillar-num">01 / UNBOX</div>
+          <h3>Pre-Cut &amp; Ready</h3>
+          <p>Every paper fold is pre-creased with precision. No frustrating measuring, no sharp cutting blades required.</p>
         </div>
 
-        <div class="catalog-search-sort">
-          <div class="search-input-box">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
-            </svg>
-            <input type="text" id="catalogSearchInput" placeholder="Search craft kits...">
-          </div>
-
-          <select class="sort-select" id="catalogSortSelect" aria-label="Sort products">
-            <option value="featured">Featured Kits</option>
-            <option value="price-low">Price: Low to High</option>
-            <option value="price-high">Price: High to Low</option>
-            <option value="rating">Highest Rated</option>
-          </select>
+        <div class="pillar-item">
+          <div class="pillar-num">02 / ASSEMBLE</div>
+          <h3>Step-by-Step Guide</h3>
+          <p>Follow along with our clear illustrated booklet or scan the included QR code for a peaceful video walkthrough.</p>
         </div>
-      </div>
 
-      <!-- Dynamic Product Cards Grid -->
-      <div class="products-grid" id="productsGrid">
-        <!-- Injected dynamically via app.js -->
+        <div class="pillar-item">
+          <div class="pillar-num">03 / ENJOY</div>
+          <h3>Warm Ambient Glow</h3>
+          <p>Switch on the safe warm-white LED light puck and enjoy a cozy, calming atmosphere you created yourself.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Craft Tools In The Box Visual Strip -->
-  <section style="padding: 2.5rem 0; background: var(--bg-card); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
-    <div class="container" style="display: grid; grid-template-columns: 1fr 1.2fr; align-items: center; gap: 2.5rem;">
-      <div>
-        <span class="craft-tag" style="margin-bottom: 0.75rem;">Zero Extra Tools Needed</span>
-        <h3 style="font-size: 1.75rem; margin-bottom: 0.85rem;">Everything Inside The Box</h3>
-        <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 1.25rem;">
-          We believe crafting should bring relaxation, not frustrating trips to hardware stores. Every single piece is included—from the Japanese bone folder and natural jute cord to non-toxic water-based adhesive and safe warm-white LED lights.
-        </p>
-        <div style="display: flex; gap: 1.5rem; font-size: 0.85rem; color: var(--text-main); font-weight: 600;">
-          <span>✓ FSC Certified Cardstock</span>
-          <span>✓ Flame-Free Safe LED</span>
-          <span>✓ 100% Recyclable Packaging</span>
-        </div>
-      </div>
-      <div>
-        <img src="assets/craft-tools.svg" alt="Craft Supplies Included in Kit" style="border-radius: var(--radius-md); box-shadow: var(--shadow-sm); width: 100%;">
-      </div>
-    </div>
-  </section>
-
-  <!-- How It Works (Simple 3-Step Process) -->
-  <section class="how-it-works-section" id="how-it-works">
+  <!-- Customer Testimonials -->
+  <section class="story-section">
     <div class="container">
-      <div class="section-header">
-        <span class="washi-strip" style="margin-bottom: 0.75rem;">Simple &amp; Mindful</span>
-        <h2>How It Works</h2>
-        <p>Designed for complete beginners and seasoned craft enthusiasts alike. Enjoy a peaceful hour of tactile making.</p>
-      </div>
-
-      <div class="steps-grid">
-        <div class="step-card">
-          <div class="step-num-badge">01</div>
-          <h3>Select Your Kit</h3>
-          <p>Choose from Nordic fluted folds, Japanese washi kumiko, real pressed flowers, or celestial star-pierced designs.</p>
+      <div class="story-grid">
+        <div class="story-card">
+          <p>“The fluted lantern was such a peaceful weekend project. The instructions were crystal clear, and the warm light on my nightstand looks stunning.”</p>
+          <div class="story-author">— Elena R., San Francisco</div>
         </div>
 
-        <div class="step-card">
-          <div class="step-num-badge">02</div>
-          <h3>Unbox &amp; Assemble</h3>
-          <p>Follow along with our beautifully photographed guide or scan the QR code for a relaxing 4K calming video tutorial.</p>
-        </div>
-
-        <div class="step-card">
-          <div class="step-num-badge">03</div>
-          <h3>Switch On &amp; Cherish</h3>
-          <p>Insert the included warm flicker LED candle, dim the lights, and enjoy the cozy ambient atmosphere you built yourself.</p>
+        <div class="story-card">
+          <p>“I love that everything was included in the box down to the adhesive and LED candle. No stress, just a calming hour of crafting.”</p>
+          <div class="story-author">— Marcus T., Seattle</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Artisanal Maker Community & Testimonials -->
-  <section class="reviews-section" id="reviews">
-    <div class="container">
-      <div class="section-header">
-        <span class="washi-strip" style="margin-bottom: 0.75rem;">Maker Feedback</span>
-        <h2>Stories From Our Craft Community</h2>
-        <p>Over 12,000 lanterns handcrafted by hobbyists, couples, and mindful creators worldwide.</p>
-      </div>
-
-      <div class="reviews-grid">
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">
-            “The Nordic Fluted lantern was the most peaceful Sunday project. The paper quality is substantial, the pre-scored folds folded like magic, and the soft amber light now sits on my bedside table every night.”
-          </p>
-          <div class="reviewer-meta">
-            <div class="reviewer-avatar">ER</div>
-            <div class="reviewer-info">
-              <h5>Elena Rostova</h5>
-              <p>Nordic Fluted Paper Lantern Kit</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">
-            “I made the Botanical Pressed Flower lantern with my partner. The dried larkspur and fern leaves look like a mini museum exhibition when the LED is switched on. Absolutely worth every penny.”
-          </p>
-          <div class="reviewer-meta">
-            <div class="reviewer-avatar">MT</div>
-            <div class="reviewer-info">
-              <h5>Marcus Thorne</h5>
-              <p>Botanical Pressed Flower Kit</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">
-            “The Kyoto Hexagonal Kumiko kit is exquisite. You can feel the craftsmanship in the laser-cut bamboo. It genuinely helped me unplug from my laptop screen for an hour of pure tactile focus.”
-          </p>
-          <div class="reviewer-meta">
-            <div class="reviewer-avatar">SH</div>
-            <div class="reviewer-info">
-              <h5>Sayuri Hayashi</h5>
-              <p>Kyoto Hexagonal Washi Lantern</p>
-            </div>
-          </div>
-        </div>
+  <!-- About / Sourcing -->
+  <section class="pillars-section" id="about" style="padding-top: 3.5rem;">
+    <div class="container" style="max-width: 720px; text-align: center;">
+      <h2 style="font-family: var(--font-serif); font-size: 2.1rem; margin-bottom: 0.75rem; color: var(--text-dark);">Sustainably Crafted</h2>
+      <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 1.5rem;">
+        At EcoCrafts, we believe the objects in our homes should carry meaning and care. All our paper is FSC-certified, our frames use renewable timber, and our packaging is 100% plastic-free.
+      </p>
+      <div style="font-size: 0.88rem; font-weight: 600; color: var(--accent);">
+        🌿 Plastic-Free Packaging • Non-Toxic Adhesives • Renewable Materials
       </div>
     </div>
   </section>
 
-  <!-- Newsletter / Craft Club -->
-  <section class="club-section" id="craft-club">
+  <!-- Newsletter -->
+  <section class="newsletter-strip">
     <div class="container">
-      <div class="club-card">
-        <span class="washi-strip" style="margin-bottom: 1rem;">Free Monthly Templates</span>
-        <h2>Join Our Slow Craft Club</h2>
-        <p>Get printable origami papercraft folding patterns, seasonal lantern styling ideas, and first access to limited holiday kits.</p>
-        <form class="club-form" id="clubForm">
+      <div class="newsletter-box">
+        <h3>Join EcoCrafts</h3>
+        <p>Receive new kit releases, seasonal craft ideas, and member discounts.</p>
+        <form class="newsletter-form" id="newsletterForm">
           <input type="email" placeholder="Enter your email address..." required>
-          <button type="submit" class="btn btn-primary">Join Club</button>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- Sober Artisanal Footer -->
+  <!-- Footer -->
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <!-- Col 1: Brand -->
-        <div class="footer-col">
-          <div class="brand-logo" style="margin-bottom: 1rem;">
-            <div class="brand-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2v20M5 7h14M7 17h10M4 12h16"/>
-              </svg>
-            </div>
-            <div class="brand-text">
-              <h2 style="font-size: 1.25rem;">EcoCrafts</h2>
-              <p>Sustainable DIY Craft Kits</p>
-            </div>
-          </div>
-          <p style="font-size: 0.88rem; line-height: 1.6; color: var(--text-muted); margin-bottom: 1.25rem;">
-            Eco-conscious DIY lantern and craft kits made with sustainably sourced papers, natural bamboo, and mindful craftsmanship to bring warm, sustainable art into your home.
-          </p>
-          <div class="craft-tag">🌿 100% Plastic-Free Packaging</div>
-        </div>
-
-        <!-- Col 2: Shop Links -->
-        <div class="footer-col">
-          <h4>DIY Collections</h4>
-          <ul class="footer-links">
-            <li><a href="#shop" onclick="state.selectedCategory='lanterns'; renderProducts();">Paper Lantern Kits</a></li>
-            <li><a href="#shop" onclick="state.selectedCategory='origami'; renderProducts();">Origami Diamond Sets</a></li>
-            <li><a href="#shop" onclick="state.selectedCategory='botanical'; renderProducts();">Pressed Botanical Vellum</a></li>
-            <li><a href="#shop" onclick="state.selectedCategory='weaving'; renderProducts();">Cane &amp; Bamboo Weaving</a></li>
-            <li><a href="#shop" onclick="state.selectedCategory='all'; renderProducts();">All-in-One Gift Boxes</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 3: Help & Workshop -->
-        <div class="footer-col">
-          <h4>Craft Studio</h4>
-          <ul class="footer-links">
-            <li><a href="#how-it-works">How The Kits Work</a></li>
-            <li><a href="#glow-studio">Interactive Glow Room</a></li>
-            <li><a href="#reviews">Customer Creations</a></li>
-            <li><a href="#">Video Tutorials &amp; Guides</a></li>
-            <li><a href="#">Wholesale &amp; Workshop Kits</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 4: Promise Card -->
-        <div class="footer-col">
-          <div class="footer-craft-promise">
-            <h5 style="font-size: 0.95rem; margin-bottom: 0.4rem; color: var(--text-main); font-family: var(--font-serif);">Our Artisan Promise</h5>
-            <p>
-              If you tear a sheet or misplace an LED bulb while assembling, simply drop us an email. We will mail a replacement piece for free. Crafting should always be stress-free.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div>&copy; 2026 EcoCrafts Co. Handcrafted with care.</div>
-        <div style="display: flex; gap: 1.5rem;">
-          <a href="#">Shipping &amp; Returns</a>
-          <a href="#">Sustainable Sourcing</a>
-          <a href="#">Privacy Policy</a>
-        </div>
-      </div>
+    <div class="container footer-inner">
+      <div>&copy; 2026 EcoCrafts. Handcrafted DIY Lantern Kits.</div>
+      <ul class="footer-links">
+        <li><a href="#shop">Shop Kits</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#">Shipping &amp; Support</a></li>
+      </ul>
     </div>
   </footer>
 
-  <!-- Slide-Over Shopping Cart Drawer -->
-  <div class="cart-drawer-backdrop" id="cartBackdrop" onclick="toggleCartDrawer(false)"></div>
-  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart Drawer">
+  <!-- Slide-Out Cart Drawer -->
+  <div class="cart-overlay" id="cartOverlay" onclick="toggleCart(false)"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Bag">
     <div class="cart-header">
-      <h3>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
-          <path d="M3 6h18"/>
-          <path d="M16 10a4 4 0 0 1-8 0"/>
-        </svg>
-        Your Craft Bag
-      </h3>
-      <button class="cart-close-btn" onclick="toggleCartDrawer(false)" aria-label="Close cart">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
-        </svg>
-      </button>
+      <h3>Your Craft Bag</h3>
+      <button class="cart-close-btn" onclick="toggleCart(false)">&times;</button>
     </div>
 
-    <!-- Free Shipping Progress Tracker -->
-    <div class="shipping-meter-box">
-      <div id="shippingMeterMsg">Add <strong>$50.00</strong> more to unlock <strong>Free Shipping</strong></div>
-      <div class="shipping-bar-track">
-        <div class="shipping-bar-fill" id="shippingBarFill"></div>
-      </div>
+    <div class="cart-items-list" id="cartItemsList">
+      <!-- Items dynamically populated via app.js -->
     </div>
 
-    <!-- Scrollable Items List -->
-    <div class="cart-items-container" id="cartItemsContainer">
-      <!-- Items dynamically injected via app.js -->
-    </div>
-
-    <!-- Cart Footer & Totals -->
-    <div class="cart-footer">
-      <div class="cart-totals-row">
-        <span>Items Subtotal</span>
+    <div class="cart-footer" id="cartFooter" style="display: none;">
+      <div class="cart-subtotal-row">
+        <span>Subtotal</span>
         <span id="cartSubtotal">$0.00</span>
       </div>
-      <div class="cart-totals-row">
-        <span>Carbon-Neutral Shipping</span>
-        <span style="color: var(--craft-sage); font-weight: 600;">Calculated at checkout</span>
-      </div>
-      <div class="cart-totals-row grand-total">
-        <span>Estimated Total</span>
-        <span id="cartGrandTotal">$0.00</span>
-      </div>
-
-      <button class="btn btn-primary checkout-btn" onclick="openCheckout()">
-        Proceed to Checkout
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
-        </svg>
+      <button class="btn btn-primary" onclick="openCheckout()" style="width: 100%;">
+        Checkout
       </button>
     </div>
   </aside>
 
-  <!-- Quick View Product Modal -->
-  <div class="modal-backdrop" id="quickViewModal" onclick="if(event.target===this) closeModal('quickViewModal')">
-    <div class="modal-content">
-      <button class="modal-close-btn" onclick="closeModal('quickViewModal')" aria-label="Close modal">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
-        </svg>
-      </button>
-      <div class="modal-body" id="quickViewModalContent">
-        <!-- Injected dynamically -->
-      </div>
+  <!-- Quick View Modal -->
+  <div class="modal-wrap" id="quickModal" onclick="if(event.target===this) closeQuickModal()">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeQuickModal()">&times;</button>
+      <div id="quickModalBody"></div>
     </div>
   </div>
 
   <!-- Checkout Modal -->
-  <div class="modal-backdrop" id="checkoutModal" onclick="if(event.target===this) closeModal('checkoutModal')">
-    <div class="modal-content checkout-modal-body">
-      <button class="modal-close-btn" onclick="closeModal('checkoutModal')" aria-label="Close checkout">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
-        </svg>
-      </button>
-      <div class="modal-body">
-        <span class="washi-strip" style="margin-bottom: 0.75rem;">Secure Checkout</span>
-        <h2 style="font-size: 1.5rem; margin-bottom: 1.25rem;">Complete Your Craft Order</h2>
+  <div class="modal-wrap" id="checkoutModal" onclick="if(event.target===this) closeCheckout()">
+    <div class="modal-box" style="max-width: 520px;">
+      <button class="modal-close" onclick="closeCheckout()">&times;</button>
+      <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem; color: var(--text-dark);">Checkout</h3>
+      <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.25rem;">Complete your order to receive your DIY kit.</p>
 
-        <!-- Order Summary Box -->
-        <div style="background: var(--bg-secondary); border-radius: var(--radius-sm); padding: 1rem; margin-bottom: 1.5rem;">
-          <h4 style="font-size: 0.88rem; margin-bottom: 0.5rem;">Kit Order Summary:</h4>
-          <div id="checkoutSummaryList"></div>
-          <div style="display: flex; justify-content: space-between; margin-top: 0.75rem; font-weight: 700;">
-            <span>Total Payable:</span>
-            <span id="checkoutTotalAmount" style="color: var(--craft-terracotta); font-size: 1.15rem;">$0.00</span>
+      <div style="background: var(--bg-page); padding: 1rem; border-radius: var(--radius-sm); margin-bottom: 1.25rem;" id="checkoutItemsList"></div>
+
+      <div style="display: flex; justify-content: space-between; font-weight: 700; margin-bottom: 1.25rem;">
+        <span>Total Payable:</span>
+        <span id="checkoutFinalTotal" style="color: var(--accent); font-size: 1.15rem;">$0.00</span>
+      </div>
+
+      <form class="checkout-form" onsubmit="handleCheckoutSubmit(event)">
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" required placeholder="Elena">
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" required placeholder="Rostova">
           </div>
         </div>
 
-        <!-- Checkout Form -->
-        <form class="checkout-form" onsubmit="handleCheckoutSubmit(event)">
-          <div class="form-row">
-            <div class="form-group">
-              <label>First Name</label>
-              <input type="text" required placeholder="Elena">
-            </div>
-            <div class="form-group">
-              <label>Last Name</label>
-              <input type="text" required placeholder="Rostova">
-            </div>
-          </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" required placeholder="elena@example.com">
+        </div>
 
+        <div class="form-group">
+          <label>Delivery Address</label>
+          <input type="text" required placeholder="Street address, apartment or suite">
+        </div>
+
+        <div class="form-grid-2">
           <div class="form-group">
-            <label>Email Address (For Video Tutorial &amp; Tracking)</label>
-            <input type="email" required placeholder="elena@example.com">
+            <label>City</label>
+            <input type="text" required placeholder="San Francisco">
           </div>
-
           <div class="form-group">
-            <label>Delivery Address</label>
-            <input type="text" required placeholder="Street address, apartment or suite">
+            <label>Postal Code</label>
+            <input type="text" required placeholder="94107">
           </div>
+        </div>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label>City</label>
-              <input type="text" required placeholder="San Francisco">
-            </div>
-            <div class="form-group">
-              <label>Postal Code</label>
-              <input type="text" required placeholder="94107">
-            </div>
-          </div>
+        <div class="form-group">
+          <label>Payment Method</label>
+          <select>
+            <option value="card">Credit / Debit Card</option>
+            <option value="cod">Cash on Delivery</option>
+            <option value="upi">Apple Pay / Google Pay</option>
+          </select>
+        </div>
 
-          <div class="form-group">
-            <label>Payment Method</label>
-            <select>
-              <option value="card">Credit / Debit Card (Secure 256-bit)</option>
-              <option value="cod">Cash on Delivery / Pay on Arrival</option>
-              <option value="upi">UPI / Apple Pay / Google Pay</option>
-            </select>
-          </div>
-
-          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem; padding: 0.9rem;">
-            Place Order &amp; Ship My DIY Kits
-          </button>
-        </form>
-      </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+          Place Order
+        </button>
+      </form>
     </div>
   </div>
 
   <!-- Order Success Confirmation Modal -->
-  <div class="modal-backdrop" id="orderSuccessModal" onclick="if(event.target===this) closeModal('orderSuccessModal')">
-    <div class="modal-content" style="max-width: 480px; text-align: center;">
-      <button class="modal-close-btn" onclick="closeModal('orderSuccessModal')" aria-label="Close modal">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
-        </svg>
+  <div class="modal-wrap" id="orderSuccessModal" onclick="if(event.target===this) closeSuccessModal()">
+    <div class="modal-box" style="max-width: 440px; text-align: center; padding: 3rem 2rem;">
+      <h2 style="font-size: 1.6rem; margin-bottom: 0.5rem; color: var(--text-dark);">Order Confirmed!</h2>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+        Your DIY box is being prepared. Order Reference: <strong id="orderRefNum" style="color: var(--text-dark);">#EC-123456</strong>.
+      </p>
+      <button class="btn btn-primary" onclick="closeSuccessModal()">
+        Back to Store
       </button>
-      <div class="modal-body" style="padding: 3rem 2rem;">
-        <div style="width: 64px; height: 64px; border-radius: 50%; background: var(--craft-sage-soft); color: var(--craft-sage); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem;">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="20 6 9 17 4 12"/>
-          </svg>
-        </div>
-        <span class="washi-strip" style="margin-bottom: 0.75rem;">Order Confirmed</span>
-        <h2 style="font-size: 1.7rem; margin-bottom: 0.5rem;">Your DIY Box Is Being Prepared!</h2>
-        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
-          Order Reference: <strong id="successOrderNum" style="color: var(--text-main);">#AK-829104</strong>. We have emailed your tracking link and link to the 4K lantern folding video tutorial.
-        </p>
-        <button class="btn btn-primary" onclick="closeModal('orderSuccessModal')">
-          Back to Craft Studio
-        </button>
-      </div>
     </div>
   </div>
 
-  <!-- Application Logic -->
   <script src="js/app.js"></script>
 </body>
 </html>
-

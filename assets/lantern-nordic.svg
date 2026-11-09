@@ -1,33 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 380" width="100%" height="100%">
   <defs>
     <radialGradient id="nordicGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#FFF2D6" stop-opacity="0.95"/>
-      <stop offset="60%" stop-color="#FCD385" stop-opacity="0.6"/>
+      <stop offset="0%" stop-color="#FFF3DA" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#FCDCA0" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="#F5B942" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="paperGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#F3ECE0"/>
-      <stop offset="25%" stop-color="#FAF7F2"/>
-      <stop offset="75%" stop-color="#FDFBF7"/>
-      <stop offset="100%" stop-color="#EBE3D5"/>
+      <stop offset="0%" stop-color="#F5EFE6"/>
+      <stop offset="25%" stop-color="#FFFFFF"/>
+      <stop offset="75%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EDE5D8"/>
     </linearGradient>
     <linearGradient id="woodBase" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#C29B70"/>
       <stop offset="100%" stop-color="#9E764C"/>
     </linearGradient>
     <filter id="softShadow" x="-10%" y="-10%" width="120%" height="130%">
-      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#554433" flood-opacity="0.14"/>
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#443525" flood-opacity="0.12"/>
     </filter>
   </defs>
 
-  <!-- Background Warm Canvas -->
-  <rect width="100%" height="100%" rx="16" fill="#F8F4EC"/>
-  
-  <!-- Subtle craft grid / stitch line -->
-  <rect x="12" y="12" width="376" height="356" rx="12" fill="none" stroke="#E3DACB" stroke-dasharray="4 4" stroke-width="1.5"/>
+  <rect width="100%" height="100%" fill="#FBF9F5" rx="16"/>
 
   <!-- Ambient Glow Behind Lantern -->
-  <circle cx="200" cy="190" r="140" fill="url(#nordicGlow)"/>
+  <circle cx="200" cy="190" r="145" fill="url(#nordicGlow)"/>
 
   <!-- Hanging Cord / Loop -->
   <path d="M 200 45 L 200 100" stroke="#7D6F5E" stroke-width="2.5" stroke-linecap="round"/>
@@ -39,18 +35,18 @@
 
   <!-- Main Fluted Paper Body -->
   <g filter="url(#softShadow)">
-    <path d="M 154 100 Q 130 190 150 270 L 250 270 Q 270 190 246 100 Z" fill="url(#paperGrad)" stroke="#DECBB6" stroke-width="1.2"/>
+    <path d="M 154 100 Q 130 190 150 270 L 250 270 Q 270 190 246 100 Z" fill="url(#paperGrad)" stroke="#DFD5C6" stroke-width="1.2"/>
     
     <!-- Fluted Paper Fold Lines -->
-    <path d="M 170 102 Q 152 190 168 269" stroke="#E2D4C0" stroke-width="1.5" fill="none"/>
-    <path d="M 186 104 Q 175 190 185 270" stroke="#D8C8B1" stroke-width="1.5" fill="none"/>
-    <path d="M 200 105 L 200 270" stroke="#E8DECD" stroke-width="2" fill="none"/>
-    <path d="M 214 104 Q 225 190 215 270" stroke="#D8C8B1" stroke-width="1.5" fill="none"/>
-    <path d="M 230 102 Q 248 190 232 269" stroke="#E2D4C0" stroke-width="1.5" fill="none"/>
+    <path d="M 170 102 Q 152 190 168 269" stroke="#E6DCD0" stroke-width="1.5" fill="none"/>
+    <path d="M 186 104 Q 175 190 185 270" stroke="#DECFC0" stroke-width="1.5" fill="none"/>
+    <path d="M 200 105 L 200 270" stroke="#EFE7DC" stroke-width="2" fill="none"/>
+    <path d="M 214 104 Q 225 190 215 270" stroke="#DECFC0" stroke-width="1.5" fill="none"/>
+    <path d="M 230 102 Q 248 190 232 269" stroke="#E6DCD0" stroke-width="1.5" fill="none"/>
 
-    <!-- Gentle horizontal scoring bands -->
-    <path d="M 142 160 Q 200 174 258 160" stroke="#ECC88B" stroke-width="1.5" stroke-dasharray="3 4" fill="none" opacity="0.8"/>
-    <path d="M 140 210 Q 200 226 260 210" stroke="#ECC88B" stroke-width="1.5" stroke-dasharray="3 4" fill="none" opacity="0.8"/>
+    <!-- Subtle horizontal bamboo rings -->
+    <path d="M 142 160 Q 200 174 258 160" stroke="#EAD4A6" stroke-width="1.2" fill="none" opacity="0.8"/>
+    <path d="M 140 210 Q 200 226 260 210" stroke="#EAD4A6" stroke-width="1.2" fill="none" opacity="0.8"/>
   </g>
 
   <!-- Wooden Bottom Pedestal -->
@@ -59,13 +55,6 @@
   <rect x="175" y="278" width="50" height="8" rx="3" fill="#8C663F"/>
 
   <!-- Warm Internal Candle Glow / Flame Hint -->
-  <ellipse cx="200" cy="188" rx="22" ry="34" fill="#FFE59E" opacity="0.85" filter="blur(6px)"/>
+  <ellipse cx="200" cy="188" rx="24" ry="36" fill="#FFE59E" opacity="0.85" filter="blur(7px)"/>
   <circle cx="200" cy="188" r="9" fill="#FFFBE6"/>
-
-  <!-- Craft Tag Overlay -->
-  <g transform="translate(290, 35)">
-    <rect x="0" y="0" width="80" height="26" rx="4" fill="#FAF1DF" stroke="#D1BEA4" stroke-width="1"/>
-    <text x="40" y="17" font-family="'Courier New', monospace" font-size="11" fill="#785E42" font-weight="bold" text-anchor="middle">DIY KIT</text>
-  </g>
 </svg>
-

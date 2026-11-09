@@ -64,3 +64,4 @@ http://localhost:8000
 ## 🌿 Sustainability Commitment
 
 All EcoCrafts kits feature 100% recyclable, plastic-free packaging, FSC-certified cardstock, and non-toxic water-based adhesives.
+
